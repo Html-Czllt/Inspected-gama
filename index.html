@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1>Relatório das redes sociais</h1>
+        <nav>
+            <a href="index.html">Mundo</a>
+            <a href="#">Minha escola</a>
+        </nav>
+    </header>
+    <main class="graficos-section">
+        <section id="graficos-container" class="graficos-container">
+            <h2 class="grafico-titulo">Distribuição de Usuários nas Principais Redes Sociais</h2>
+            <p class="grafico-descricao">
+                No mundo, existem aproximadamente <span class="destaque">8 bilhões de pessoas</span>. Dessas, cerca de 
+                <span class="destaque">4,6 bilhões estão conectadas a alguma rede social</span>, representando um aumento significativo nos últimos anos. 
+                Em média, os usuários passam cerca de <span class="destaque">2 horas e 31 minutos por dia</span> conectados às redes sociais, 
+                interagindo com amigos, consumindo conteúdo e compartilhando suas experiências.
+            </p>
+            <div id="grafico" class="grafico"></div> <!-- Onde o gráfico será renderizado -->
+        </section>
+        
+                        <div id="grafico" class="grafico"></div> <!-- Onde o gráfico será renderizado -->
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por (nome)</p>
+    </footer>
+    <script type="module" src="script.js"></script>
+    <script src="graficos/graficoColunas.js"></script>
+</body>
+</html>
