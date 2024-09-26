@@ -4,11 +4,11 @@ const dadosGlobais = {
     usuarios: [2.900, 2.000, 450, 950, 2.700, 1.200] // Dados do mundo
 };
 
-// Dados do gráfico do Brasil
 const dadosBrasil = {
-    redesSociais: ['Facebook', 'Instagram', 'Twitter', 'LinkedIn', 'YouTube', 'TikTok'],
-    usuarios: [100, 150, 70, 50, 200, 120] // Dados do Brasil
+    redesSociais: ['WhatsApp', 'YouTube', 'Instagram', 'Facebook', 'TikTok', 'LinkedIn', 'Messenger', 'Kwai', 'Pinterest', 'Twitter'],
+    usuarios: [169, 142, 113, 109, 82, 63, 62, 48, 28, 24] // Dados em milhões
 };
+
 
 // Função para renderizar o gráfico
 function renderizarGrafico(dados) {
