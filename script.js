@@ -1,7 +1,7 @@
 // Dados do gráfico global
 const dadosGlobais = {
     redesSociais: ['Facebook', 'Instagram', 'Twitter', 'LinkedIn', 'YouTube', 'TikTok'],
-    usuarios: [200, 300, 150, 100, 400, 250] // Dados do mundo
+    usuarios: [2.900, 2.000, 450, 950, 2.700, 1.200] // Dados do mundo
 };
 
 // Dados do gráfico do Brasil
