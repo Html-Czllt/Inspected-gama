@@ -50,7 +50,7 @@ nav a::after {
     position: absolute;
     width: 100%;
     height: 2px; /* Espessura do sublinhado */
-    background: var(--highlight-color);
+    background: var(--secondary-color);
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -62,7 +62,7 @@ nav a:hover::after {
 }
 
 nav a:hover {
-    color: var(--highlight-color); /* Amarelo ao passar o mouse */
+    color: var(--secondary-color); /* Amarelo ao passar o mouse */
 }
 
 
