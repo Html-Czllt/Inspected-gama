@@ -42,6 +42,7 @@ nav a {
     font-size: 1.2rem;
     position: relative;
     overflow: hidden;
+    padding: 0.5rem 0; /* Espaçamento vertical */
 }
 
 nav a::after {
@@ -63,6 +64,7 @@ nav a:hover::after {
 nav a:hover {
     color: var(--highlight-color); /* Amarelo ao passar o mouse */
 }
+
 
 
 
