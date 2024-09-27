@@ -1,15 +1,16 @@
+
 import { getCSS, tickConfig } from "./common.js";
 
 async function quantidadeUsuariosPorRede() {
     // Dados fictícios dos usuários na escola, incluindo YouTube
     const dadosEscola = {
-        "Facebook": 500,
-        "Instagram": 800,
-        "Twitter": 200,
-        "TikTok": 600,
-        "WhatsApp": 1000,
-        "YouTube": 900 // Adicionando o YouTube
-    };
+        "Facebook": 200,
+        "Instagram": 1850,
+        "Twitter": 900,
+        "TikTok": 1670,
+        "WhatsApp": 1900,
+        "YouTube": 1200,
+     }
 
     // Ordenar os dados pela quantidade de usuários em ordem decrescente
     const ordenados = Object.entries(dadosEscola).sort((a, b) => b[1] - a[1]);
@@ -20,9 +21,9 @@ async function quantidadeUsuariosPorRede() {
     const textoExplicativo = document.createElement('p');
     textoExplicativo.classList.add('graficos-container__texto');
     textoExplicativo.innerHTML = `
-        <span style="font-weight: bold; color: ${getCSS('--secondary-color')}">Você sabia que a nossa escola possui 2.000 alunos?</span>
+        <span style="font-weight: bold; color: ${getCSS('--secondary-color')}">Você sabia que a nossa escola possui aproximadamente 2.000 alunos?</span>
         <br><br>
-        Aproximadamente <span style="font-weight: bold; color: ${getCSS('--secondary-color')}">1.500 estudantes</span> estão conectados em alguma rede social e, em média, passam cerca de <span style="font-weight: bold; color: ${getCSS('--secondary-color')}">4 horas</span> por dia nessas plataformas. Isso significa que uma grande parte dos alunos está ativa nas redes sociais.
+        Aproximadamente <span style="font-weight: bold; color: ${getCSS('--secondary-color')}">1.900 estudantes</span> estão conectados em alguma rede social e, em média, passam cerca de <span style="font-weight: bold; color: ${getCSS('--secondary-color')}">4 horas</span> por dia nessas plataformas. Isso significa que uma grande parte dos alunos está ativa nas redes sociais.
         <br><br>
         Abaixo, você pode ver o gráfico que mostra as redes sociais mais utilizadas entre nossos alunos.
     `;
@@ -36,7 +37,7 @@ async function quantidadeUsuariosPorRede() {
             y: quantidadeDeUsuarios, 
             type: 'bar',
             marker: {
-                color: getCSS('--terciary-color')
+                color: ['#798e8e', '#96acac', '#b5cbcb', '#d4ebeb', '#e8fcfc', '#f0fdfd'] // Cores para cada coluna
             }
         }
     ];
@@ -69,7 +70,8 @@ async function quantidadeUsuariosPorRede() {
                 font: {
                     color: getCSS('--secondary-color')
                 }
-            }
+            },
+            range: [0, 2000] // Definindo o range do eixo Y para ir de 0 a 1800
         }
     };
 

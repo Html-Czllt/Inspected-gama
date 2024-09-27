@@ -14,10 +14,10 @@ async function quantidadeUsuariosPorRede() {
             y: quantidadeDeUsuarios, 
             type: 'bar',
             marker: {
-                color: getCSS('--terciary-color')
+                color: ['#798e8e', '#96acac', '#b5cbcb', '#d4ebeb', '#e8fcfc', '#f0fdfd'] // Cores para cada coluna
             }
         }
-    ]
+    ];
 
     const laytout = {
         plot_bgcolor: getCSS('--bg-color'),
